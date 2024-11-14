@@ -2,12 +2,13 @@
 FROM ubuntu:24.04
 
 #Se define una argumento en construccion de la imagen 
-ARG NAME
-#Se define una variable en ejecucuión del contenedor 
-# ENV USUARIO=${NAME}
 
 ENV USUARIO="pepe"
 ENV PASSWORD="abc"
+# ENV CONTEXTO=${CONTEXTO}
+
+ARG CONTEXT
+ARG D_FILES=${CONTEXT}/dockerfiles
 
 RUN apt-get update && apt-get install -yq --no-install-recommends && rm -rf /var/lib/apt/lists/* \
      curl \ 
@@ -17,11 +18,14 @@ RUN apt-get update && apt-get install -yq --no-install-recommends && rm -rf /var
      iputils-ping
 
 RUN mkdir /root/logs
-RUN touch /root/logs/archivo.log
+RUN touch /root/logs/build.log
+
+RUN echo "contexto: ${D_FILES}" 
+
 
 RUN mkdir /root/admin
-COPY ./admin /root/admin
-COPY start.sh /root/admin
+COPY ./dockerfiles/ubuntu/admin /root/admin
+
 
 # COPY ./datos/bienvenida.j2 /root
 RUN chmod +x /root/admin/start.sh

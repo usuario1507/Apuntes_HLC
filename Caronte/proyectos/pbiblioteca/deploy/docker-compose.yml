@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  servidor:
+    build:
+      context: ${CONTEXTO}
+      dockerfile: ./dockerfiles/ubuntu/Dockerfile
+    container_name: ${NAME_CT}
+    environment:
+      - USUARIO=${USUARIO}
+      - PASSWORD=${PASSWD}
+    volumes:
+      - ./logs:/root/logs

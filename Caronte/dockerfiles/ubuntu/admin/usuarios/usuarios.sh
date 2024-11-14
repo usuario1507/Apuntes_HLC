@@ -20,6 +20,7 @@ check_home(){
 }
 
 newUser(){
+    echo " ------------- USUARIO --------------------" >>  /root/logs/archivo.log
     check_usuario 
     if [ "$?" -eq 0 ]
     then 

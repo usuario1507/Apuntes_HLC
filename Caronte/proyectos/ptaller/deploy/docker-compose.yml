@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  servidor:
+    build:
+      context: ${CONTEXTO}
+      dockerfile: ./dockerfiles/ubuntu/Dockerfile
+      args: 
+        - CONTEXT=${CONTEXTO}
+        - TZ=${TZ}
+    image: ${AUTOR}/ubuntubase
+    container_name: ${HOSTNAME}
+    hostname: ${HOSTNAME}
+    env_file:
+      - ./.env
+    environment:
+      - USUARIO=${USUARIO}
+      - PASSWORD=${PASSWD}
+      - HOSTNAME=servidor1
+    volumes:
+      - ./logs:/root/logs

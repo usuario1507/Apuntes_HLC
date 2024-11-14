@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  servidor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ${NAME_CT}
+    environment:
+      - USUARIO=${USUARIO}
+      - PASSWORD=${PASSWD}
+    volumes:
+      - ./logs:/root/logs
+    networks:
+      netempresa:
+        ipv4_address: 172.160.20.4
+
+networks:
+  netempresa:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.160.20.0/24
