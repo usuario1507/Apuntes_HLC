@@ -7,6 +7,7 @@ ARG CONTEXT
 # ARG D_FILES=${CONTEXT}/dockerfiles
 ARG PROYECTO
 
+USER root
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN apt update && apt install -yq --no-install-recommends \

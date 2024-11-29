@@ -1,15 +1,17 @@
 #!/bin/bash
 set -e
 
-source ./usuarios/usuarios.sh
-source ./ssh/ssh.sh
+source /root/admin/usuarios/usuarios.sh
+source /root/admin/ssh/ssh.sh
 
 chmod +x /root/admin/usuarios/usuarios.sh
 chmod +x /root/admin/ssh/ssh.sh
 
 main(){
    newUser  
-   config_ssh
+#    if [ "$?" -eq 0 ]
+#    then 
+   newSSH
    # make_bienvenida
 
     tail -f /dev/null 

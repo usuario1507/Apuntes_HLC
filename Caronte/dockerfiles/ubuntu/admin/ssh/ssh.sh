@@ -8,3 +8,17 @@ config_ssh(){
     fi
     /etc/init.d/ssh start
 }
+#morgado ALL=(ALL:ALL) ALL
+config_sudoers(){
+    if [ -f /etc/sudoers ]
+    then 
+        #comprobar que el ${USUARIO} No existe
+        echo "${USUARIO} ALL=(ALL:ALL) ALL" >> /etc/sudoers
+    fi
+}
+
+newSSH(){
+    #gestion de errores y salida a logs
+    config_ssh
+    config_sudoers
+}

@@ -3,10 +3,32 @@ services:
   servidor:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/ubuntu/Dockerfile
-    container_name: ${NAME_CT}
+      dockerfile: ./dockerfiles/sweb/nginx/Dockerfile
+      args: 
+        - CONTEXT=${CONTEXTO}
+        - TZ=${TZ}
+        - PROYECTO=${PROYECTO}
+        - AUTOR=${AUTOR}
+    image: ${AUTOR}/nginx
+    container_name: minginx1
+    hostname: ${HOSTNAME}
+    env_file:
+      - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
+    ports:
+      - "${PORT_ORIGEN}:80"
     volumes:
       - ./logs:/root/logs
+      - ./html:/var/www/html
+    networks:
+      netcaronte:
+        ipv4_address: 172.120.10.3
+
+networks:
+  netcaronte:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.120.10.0/24
