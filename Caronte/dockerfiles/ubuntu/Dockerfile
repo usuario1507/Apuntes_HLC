@@ -6,7 +6,7 @@ ARG TZ
 ARG CONTEXT
 # ARG D_FILES=${CONTEXT}/dockerfiles
 ARG PROYECTO
-
+ARG AUTOR
 USER root
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 

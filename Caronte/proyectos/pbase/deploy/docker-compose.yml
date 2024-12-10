@@ -3,30 +3,24 @@ services:
   servidor:
     build:
       context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/sweb/nginx/Dockerfile
-      # dockerfile: ./dockerfiles/sweb/nginx/Dockerfilemulti
-
+      dockerfile: ./dockerfiles/ubuntu/Dockerfile
       args: 
         - CONTEXT=${CONTEXTO}
         - TZ=${TZ}
         - PROYECTO=${PROYECTO}
-        - AUTOR=${AUTOR}
-    image: ${AUTOR}/nginx
-    container_name: nginx1
+    image: ${AUTOR}/ubuntubase
+    container_name: miservidor
     hostname: ${HOSTNAME}
     env_file:
       - ./.env
     environment:
       - USUARIO=${USUARIO}
       - PASSWORD=${PASSWD}
-    ports:
-      - "${PORT_ORIGEN}:80"
     volumes:
       - ./logs:/root/logs
-      - ./html:/var/www/html
     networks:
       netcaronte:
-        ipv4_address: 172.120.10.3
+        ipv4_address: 172.120.10.2
 
 networks:
   netcaronte:
