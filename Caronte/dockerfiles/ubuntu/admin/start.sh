@@ -14,7 +14,7 @@ main(){
    newSSH
    # make_bienvenida
 
-   tail -f /dev/null  
+   # tail -f /dev/null &
 }
 
 main

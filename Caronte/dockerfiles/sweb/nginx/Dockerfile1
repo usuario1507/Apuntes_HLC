@@ -1,13 +1,11 @@
 ARG AUTOR
 FROM ${AUTOR}/ubuntubase
 
-
-ARG USUARIO
+ENV USUARIO="pepe"
+ENV PASSWORD="abc"
 ARG CONTEXT
 ARG PROYECTO
 ARG TZ
-ENV USUARIO="pepe"
-ENV PASSWORD="abc"
 
 USER root
 RUN apt update && apt install -yq --no-install-recommends \
@@ -19,9 +17,7 @@ COPY ./proyectos/${PROYECTO}/deploy/config/default.conf /etc/nginx/conf.d/defaul
 # COPY ./proyectos/${PROYECTO}/deploy/config /root/admin/nginx
 
 # COPY ./proyectos/${PROYECTO}/deploy/html /var/www/html
-# RUN mkdir /home/${USUARIO}/app
-# COPY ./proyectos/${PROYECTO}/app /home/${USUARIO}/app
-
+COPY ./proyectos/${PROYECTO}/app /var/www/html
 RUN chown -R www-data /var/www/html
 RUN chmod -R 755 /var/www/html
 

@@ -6,7 +6,8 @@ config_ssh(){
         mkdir /home/${USUARIO}/.ssh
         cat /root/datos/id_rsa.pub >> /home/${USUARIO}/.ssh/authorized_keys
     fi
-    /etc/init.d/ssh start
+    # /etc/init.d/ssh start
+    exec /usr/sbin/sshd -D &
 }
 #morgado ALL=(ALL:ALL) ALL
 config_sudoers(){
@@ -19,6 +20,7 @@ config_sudoers(){
 
 newSSH(){
     #gestion de errores y salida a logs
-    config_ssh
+    
     config_sudoers
+    config_ssh
 }
