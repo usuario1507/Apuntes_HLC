@@ -6,8 +6,8 @@ config_ssh(){
         mkdir /home/${USUARIO}/.ssh
         cat /root/datos/id_rsa.pub >> /home/${USUARIO}/.ssh/authorized_keys
     fi
-    # /etc/init.d/ssh start
-    exec /usr/sbin/sshd -D &
+    # /etc/init.d/ssh start &
+    exec /usr/sbin/sshd -D & # dejar el ssh en background (2plano)
 }
 #morgado ALL=(ALL:ALL) ALL
 config_sudoers(){
