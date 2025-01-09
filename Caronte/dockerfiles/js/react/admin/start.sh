@@ -34,6 +34,7 @@ config_react(){
       echo "Construyendo la aplicación React para producción..." >> /root/logs/react.log
       # Ejecutar npm run build
       npm run build 
+      # copiamos
       if [ $? -ne 0 ]; then
             echo "Error al construir la aplicación.">> /root/logs/react.log
             exit 1
