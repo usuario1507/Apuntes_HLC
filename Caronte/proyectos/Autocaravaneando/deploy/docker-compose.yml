@@ -4,7 +4,6 @@ services:
     build:
       context: ${CONTEXTO}
       dockerfile: ./dockerfiles/js/react/Dockerfile
-
       args: 
         - CONTEXT=${CONTEXTO}
         - TZ=${TZ}
@@ -23,10 +22,10 @@ services:
       - 3000:3000
     volumes:
       - ./logs:/root/logs
-      # - ./html:/var/www/html
+      - ./html:/var/www/html
     networks:
       netcaronte:
-        ipv4_address: 172.120.10.4
+        ipv4_address: 172.120.10.10
 
 networks:
   netcaronte:

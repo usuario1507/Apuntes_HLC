@@ -1,8 +1,8 @@
 ARG AUTOR
 FROM ${AUTOR}/nginx:latest
 
-ENV USUARIO="pepe"
-ENV PASSWORD="abc"
+ENV USUARIO="angel"
+ENV PASSWORD="usuario150789"
 ENV GITHUB=""
 ARG CONTEXT
 ARG PROYECTO
@@ -25,10 +25,10 @@ COPY ./dockerfiles/js/react /root/admin/react
 RUN chmod +x /root/admin/react/admin/start.sh
 
 WORKDIR /var/www/html
-# COPY ./proyectos/${PROYECTO}/app /var/www/html
+COPY ./proyectos/${PROYECTO}/app /var/www/html
 
-# RUN npm install
-# RUN chown -R www-data /var/www/html
+RUN npm install
+RUN chown -R www-data /var/www/html
 EXPOSE 3000
 
 WORKDIR /root/admin/react

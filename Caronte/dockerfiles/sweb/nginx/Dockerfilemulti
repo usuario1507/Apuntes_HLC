@@ -1,8 +1,8 @@
 ARG AUTOR
 FROM ${AUTOR}/ubuntubase AS base
 
-ENV USUARIO="pepe"
-ENV PASSWORD="abc"
+ENV USUARIO="angel"
+ENV PASSWORD="usuario150789"
 ARG CONTEXT
 ARG TZ
 

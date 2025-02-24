@@ -6,8 +6,8 @@ ARG USUARIO
 ARG CONTEXT
 ARG PROYECTO
 ARG TZ
-ENV USUARIO="pepe"
-ENV PASSWORD="abc"
+ENV USUARIO="angel"
+ENV PASSWORD="usuario150789"
 
 USER root
 RUN apt update && apt install -yq --no-install-recommends \
@@ -18,9 +18,9 @@ COPY ./proyectos/${PROYECTO}/deploy/config/default.conf /etc/nginx/conf.d/defaul
 # verificar en entrypoint la existencia de /etc/nginx/conf.d y /var/www/html
 # COPY ./proyectos/${PROYECTO}/deploy/config /root/admin/nginx
 
-# COPY ./proyectos/${PROYECTO}/deploy/html /var/www/html
-# RUN mkdir /home/${USUARIO}/app
-# COPY ./proyectos/${PROYECTO}/app /home/${USUARIO}/app
+ COPY ./proyectos/${PROYECTO}/deploy/html /var/www/html
+ RUN mkdir /home/${USUARIO}/app
+ COPY ./proyectos/${PROYECTO}/app /home/${USUARIO}/app
 
 RUN chown -R www-data /var/www/html
 RUN chmod -R 755 /var/www/html

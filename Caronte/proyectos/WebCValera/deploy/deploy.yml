@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: webcvalera-d
+  labels:
+    app: webcvalera
+spec:
+  replicas: 2
+  selector: 
+    matchLabels:
+      app: webcvalera
+  template:
+    metadata:
+      labels: 
+        app: webcvalera
+    spec:
+      containers:
+        - name: webcvalera
+          image: usuario1507/angel-react
+          envFrom:
+            - configMapRef:
+                name: app-env-configmap
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
