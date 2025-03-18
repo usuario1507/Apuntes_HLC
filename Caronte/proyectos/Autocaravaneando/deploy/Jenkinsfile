@@ -1,1 +1,91 @@
+pipeline {
+    agent any
 
+    environment {
+        // Variables de entorno
+        KUBE_SERVER = "https://<CAMBIAESTEURL_API_SERVER>"
+        NAMESPACE = "<namespace>" // Cambia por tu namespace
+        REGISTRY = "<nogoboarder>" // Cambia por tu usuario de Docker Hub o tu registro privado
+        TAG = "latest"
+        DOCKER_HUB_USER = "morgadodesarrollador" // Cambia por tu usuario de Docker Hub
+        DOCKER_HUB_PASS = credentials('docker-hub-credentials') // Configura una credencial en Jenkins con tu token de Docker Hub
+        KUBECONFIG = credentials('kubeconfig') // Configura una credencial en Jenkins con el kubeconfig de tu PC
+        IMAGE_NAME = "${DOCKER_HUB_USER}/autocaravaneando:${TAG}" // Nombre de la imagen Docker
+    }
+
+    stages {
+        stage('Clonar repositorio git Autocaravaneando desde Github') {
+            steps {
+                git branch: "master", url: "https://github.com/morgadodesarrollador/autocaravaneando.git"
+            }
+        }
+
+        stage('Construir imagen Docker') {
+            steps {
+                script {
+                    docker.build("${IMAGE_NAME}")
+                }
+            }
+        }
+
+        stage('Autenticarse en Docker Hub') {
+            steps {
+                script {
+                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
+                        docker.image("${IMAGE_NAME}").push()
+                    }
+                }
+            }
+        }
+
+        // Stage 4: Configurar acceso a Kubernetes
+        stage('Configurar acceso a Kubernetes') {
+            steps {
+                script {
+                    withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
+                        sh """
+                            export KUBECONFIG=${KUBECONFIG}
+                            kubectl config use-context jenkins
+                        """
+                    }
+                }
+            }
+        }
+
+        stage('Verificar Kubernetes') {
+            steps {
+                sh 'kubectl version --client'
+                sh 'kubectl config current-context' // Verifica que está usando el contexto correcto
+                sh 'kubectl get nodes' // Confirma conexión con el clúster
+            }
+        }
+
+        // Stage 6: Desplegar en Kubernetes
+        stage('Deploy en Kubernetes') {
+            steps {
+                script {
+                    try {
+                        sh "kubectl apply -f deploy/kubernetes/deploy.yaml"
+                        sh "kubectl apply -f deploy/kubernetes/serviceNP.yaml"
+                    } catch (err) {
+                        error "Error al aplicar los archivos YAML: ${err}"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "Despliegue completado con éxito"
+            mail to: 'your-email@example.com', subject: 'Pipeline Exitoso', body: 'El despliegue se ha completado con éxito.'
+        }
+        failure {
+            echo "Error en el despliegue"
+            mail to: 'your-email@example.com', subject: 'Pipeline Fallido', body: 'Ha ocurrido un error en el despliegue.'
+        }
+        always {
+            cleanWs() // Limpia el espacio de trabajo después de cada ejecución
+        }
+    }
+}
