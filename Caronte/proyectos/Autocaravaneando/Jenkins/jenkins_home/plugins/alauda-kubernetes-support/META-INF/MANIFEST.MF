@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: szheng
+Build-Jdk: 1.8.0_192
+Extension-Name: alauda-kubernetes-support
+Specification-Title: This plugin allows users to config kubernetes and
+  share configuration to other plugins.
+Specification-Vendor: Alauda
+Implementation-Vendor: Alauda
+Implementation-Title: alauda-kubernetes-support
+Implementation-Version: 2.3.0
+Group-Id: io.alauda.jenkins.plugins
+Short-Name: alauda-kubernetes-support
+Long-Name: Alauda Kubernetes Suport Plugin
+Url: https://wiki.jenkins.io/display/JENKINS/Alauda+Kubernetes+Support
+ +Plugin
+Plugin-Version: 2.3.0
+Hudson-Version: 2.83
+Jenkins-Version: 2.83
+Plugin-Dependencies: credentials:2.1.16,plain-credentials:1.4
+Plugin-Developers: Alauda Developers:alaudaDevelopers:devs@alauda.io
+

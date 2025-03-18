@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: CloudBees Docker Hub/Registry Notification
+Specification-Version: 0.0
+Implementation-Title: CloudBees Docker Hub/Registry Notification
+Implementation-Version: 220.vf1f1c582fe8d
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: dockerhub-notification
+Short-Name: dockerhub-notification
+Long-Name: CloudBees Docker Hub/Registry Notification
+Url: https://github.com/jenkinsci/dockerhub-notification-plugin
+Plugin-Version: 220.vf1f1c582fe8d
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: joda-time-api:2.13.0-93.v9934da_29b_a_e9,okhttp-api
+ :4.11.0-183.va_87fc7a_89810,docker-commons:445.v6b_646c962a_94,structs:
+ 338.v848422169819
+Plugin-Developers: 
+Plugin-License-Name: MIT
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/dockerhub-not
+ ification-plugin.git
+Plugin-ScmTag: f1f1c582fe8d6c6ee23316c30cbf85541b2c76b6
+Plugin-ScmUrl: https://github.com/jenkinsci/dockerhub-notification-plugi
+ n
+Implementation-Build: f1f1c582fe8d6c6ee23316c30cbf85541b2c76b6
+

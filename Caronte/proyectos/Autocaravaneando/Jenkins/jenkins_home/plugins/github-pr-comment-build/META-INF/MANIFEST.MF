@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: GitHub PR Comment Build Plugin
+Specification-Version: 0.0
+Implementation-Title: GitHub PR Comment Build Plugin
+Implementation-Version: 134.ve7ff0b_719821
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: github-pr-comment-build
+Short-Name: github-pr-comment-build
+Long-Name: GitHub PR Comment Build Plugin
+Url: https://github.com/jenkinsci/github-pr-comment-build-plugin
+Plugin-Version: 134.ve7ff0b_719821
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: branch-api:2.1214.v3f652804588d,github-branch-sourc
+ e:1810.v913311241fa_9
+Plugin-Developers: 
+Plugin-License-Name: MIT
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/github-pr-com
+ ment-build-plugin.git
+Plugin-ScmTag: e7ff0b719821d58536e7c1bb93f7a34934be9aa5
+Plugin-ScmUrl: https://github.com/jenkinsci/github-pr-comment-build-plug
+ in
+Implementation-Build: e7ff0b719821d58536e7c1bb93f7a34934be9aa5
+

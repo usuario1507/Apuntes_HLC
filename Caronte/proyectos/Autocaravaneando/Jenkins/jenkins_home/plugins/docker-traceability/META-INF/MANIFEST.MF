@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nenashev
+Build-Jdk: 1.7.0_75
+Extension-Name: docker-traceability
+Specification-Title: Provides an ability to trace server deployments v
+ ia fingerprints
+Implementation-Title: docker-traceability
+Implementation-Version: 1.2
+Plugin-Class: org.jenkinsci.plugins.docker.traceability.DockerTraceabi
+ lityPlugin
+Group-Id: org.jenkins-ci.plugins
+Short-Name: docker-traceability
+Long-Name: CloudBees Docker Traceability
+Url: http://wiki.jenkins-ci.org/display/JENKINS/CloudBees+Docker+Trace
+ ability
+Plugin-Version: 1.2
+Hudson-Version: 1.565.3
+Jenkins-Version: 1.565.3
+Mask-Classes: com.github.dockerjava.
+Plugin-Dependencies: docker-commons:1.0
+Plugin-Developers: 
+

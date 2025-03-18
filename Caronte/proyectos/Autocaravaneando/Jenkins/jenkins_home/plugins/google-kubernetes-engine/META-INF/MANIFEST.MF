@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Google Kubernetes Engine Plugin
+Specification-Version: 0.0
+Specification-Vendor: Google
+Implementation-Title: Google Kubernetes Engine Plugin
+Implementation-Version: 0.436.v0064b_4a_da_a_7a_
+Implementation-Vendor: Google
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: google-kubernetes-engine
+Short-Name: google-kubernetes-engine
+Long-Name: Google Kubernetes Engine Plugin
+Url: https://github.com/jenkinsci/google-kubernetes-engine-plugin
+Plugin-Version: 0.436.v0064b_4a_da_a_7a_
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: gson-api:2.11.0-85.v1f4e87273c33,json-path-api:2.9.
+ 0-118.v7f23ed82a_8b_8,snakeyaml-api:2.3-123.v13484c65210a_,workflow-ste
+ p-api:678.v3ee58b_469476,apache-httpcomponents-client-4-api:4.5.14-208.
+ v438351942757,credentials:1405.vb_cda_74a_f8974,display-url-api:2.209.v
+ 582ed814ff2f,git:5.7.0,google-oauth-plugin:1.330.vf5e86021cb_ec,jackson
+ 2-api:2.17.0-379.v02de8ec9f64c,junit:1312.v1a_235a_b_94a_31,structs:338
+ .v848422169819
+Plugin-Developers: Don McCasland:donmccasland:donmccasland@google.com,Ta
+ ra Hernandez:tarahernandez:tarahernandez@google.com
+Plugin-License-Name: Apache License, Version 2.0
+Plugin-License-Url: https://www.apache.org/licenses/LICENSE-2.0.txt
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/google-kubern
+ etes-engine-plugin.git
+Plugin-ScmTag: 0064b4adaa7ab64e5904c8e7040383b21be25dd1
+Plugin-ScmUrl: https://github.com/jenkinsci/google-kubernetes-engine-plu
+ gin
+Implementation-Build: 0064b4adaa7ab64e5904c8e7040383b21be25dd1
+

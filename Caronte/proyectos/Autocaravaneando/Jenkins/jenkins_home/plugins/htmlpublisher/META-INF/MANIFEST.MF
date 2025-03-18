@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: HTML Publisher plugin
+Specification-Version: 0.0
+Implementation-Title: HTML Publisher plugin
+Implementation-Version: 424.va_e57f1253461
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: htmlpublisher
+Short-Name: htmlpublisher
+Long-Name: HTML Publisher plugin
+Url: https://github.com/jenkinsci/htmlpublisher-plugin
+Plugin-Version: 424.va_e57f1253461
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: workflow-step-api:686.v603d058a_e148,matrix-project
+ :845.vffd7fa_f27555;resolution:=optional
+Plugin-Developers: Richard Bywater:r2b2_nz:,Michael Rooney:mcrooney:
+Plugin-License-Name: The MIT License (MIT)
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/htmlpublisher
+ -plugin.git
+Plugin-ScmTag: ae57f12534618b53073e190d460b5e48c6b77a11
+Plugin-ScmUrl: https://github.com/jenkinsci/htmlpublisher-plugin
+Implementation-Build: ae57f12534618b53073e190d460b5e48c6b77a11
+

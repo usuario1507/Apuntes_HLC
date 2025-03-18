@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: OAuth Credentials plugin
+Specification-Version: 0.0
+Implementation-Title: OAuth Credentials plugin
+Implementation-Version: 0.657.v7d8dd90b_0382
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: oauth-credentials
+Short-Name: oauth-credentials
+Long-Name: OAuth Credentials plugin
+Url: https://github.com/jenkinsci/oauth-credentials-plugin/blob/master/D
+ ocumentation.adoc
+Plugin-Version: 0.657.v7d8dd90b_0382
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: credentials:1405.vb_cda_74a_f8974
+Plugin-Developers: Matt Moore:mattmoor:,Adrien Lecharpentier:alecharp:,E
+ varisto Gutierrez:varyvol:
+Plugin-License-Name: The Apache V2 License
+Plugin-License-Url: http://www.apache.org/licenses/LICENSE-2.0
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/oauth-credent
+ ials-plugin.git
+Plugin-ScmTag: 7d8dd90b0382edd3bae3ad1f5984390ebca4a059
+Plugin-ScmUrl: https://github.com/jenkinsci/oauth-credentials-plugin
+Implementation-Build: 7d8dd90b0382edd3bae3ad1f5984390ebca4a059
+

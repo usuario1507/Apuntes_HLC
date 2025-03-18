@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkinsci.plugins.docker.traceability.DockerTraceabilityPlugin plugin="docker-traceability@1.2">
+  <configuration>
+    <createImageFingerprints>false</createImageFingerprints>
+    <showRootAction>false</showRootAction>
+  </configuration>
+</org.jenkinsci.plugins.docker.traceability.DockerTraceabilityPlugin>

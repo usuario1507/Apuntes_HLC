@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Azure Kubernetes Credentials
+Specification-Version: 0.0
+Implementation-Title: Azure Kubernetes Credentials
+Implementation-Version: 35.v0cefe6111a_b_4
+Group-Id: io.jenkins.plugins
+Artifact-Id: azure-kubernetes-credentials
+Short-Name: azure-kubernetes-credentials
+Long-Name: Azure Kubernetes Credentials
+Url: https://github.com/jenkinsci/azure-kubernetes-credentials-plugin
+Plugin-Version: 35.v0cefe6111a_b_4
+Hudson-Version: 2.414.3
+Jenkins-Version: 2.414.3
+Plugin-Dependencies: kubernetes-credentials-provider:1.262.v2670ef7ea_0c
+ 5,azure-credentials:312.v0f3973cd1e59
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/license/mit/
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/azure-kuberne
+ tes-credentials-plugin
+Plugin-ScmTag: 0cefe6111ab4067398ff8644246af9cbb5c1acf4
+Plugin-ScmUrl: https://github.com/jenkinsci/azure-kubernetes-credentials
+ -plugin
+Plugin-GitHash: 0cefe6111ab4067398ff8644246af9cbb5c1acf4
+Implementation-Build: 0cefe6111ab4067398ff8644246af9cbb5c1acf4
+

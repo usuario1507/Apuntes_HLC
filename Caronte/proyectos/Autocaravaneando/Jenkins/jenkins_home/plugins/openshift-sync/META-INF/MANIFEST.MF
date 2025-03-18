@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: OpenShift Sync
+Specification-Version: 0.0
+Specification-Vendor: Red Hat
+Implementation-Title: OpenShift Sync
+Implementation-Version: 1.1.0.802.v45585f8cdc07
+Implementation-Vendor: Red Hat
+Group-Id: io.fabric8.jenkins.plugins
+Artifact-Id: openshift-sync
+Short-Name: openshift-sync
+Long-Name: OpenShift Sync
+Url: https://plugins.jenkins.io/openshift-sync/
+Plugin-Version: 1.1.0.802.v45585f8cdc07
+Hudson-Version: 2.426.2
+Jenkins-Version: 2.426.2
+PluginFirstClassLoader: true
+Plugin-Dependencies: blueocean-rest:1.27.9,kubernetes:4174.v4230d0ccd951
+ ,pipeline-rest-api:2.34,workflow-multibranch:773.vc4fe1378f1d5,workflow
+ -support:865.v43e78cc44e0d,git:5.2.1
+Plugin-Developers: 
+Plugin-License-Name: Apache License, Version 2.0
+Plugin-License-Url: https://www.apache.org/licenses/LICENSE-2.0.txt
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/openshift-syn
+ c-plugin.git
+Plugin-ScmTag: 45585f8cdc07100e1bc1f7bfb2dba534f378467a
+Plugin-ScmUrl: https://github.com/jenkinsci/openshift-sync-plugin/
+Plugin-GitHash: 45585f8cdc07100e1bc1f7bfb2dba534f378467a
+Implementation-Build: 45585f8cdc07100e1bc1f7bfb2dba534f378467a
+

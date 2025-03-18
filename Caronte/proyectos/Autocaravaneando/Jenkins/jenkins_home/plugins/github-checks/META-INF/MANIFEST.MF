@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: GitHub Checks plugin
+Specification-Version: 0.0
+Implementation-Title: GitHub Checks plugin
+Implementation-Version: 602.v264a_83610da_6
+Group-Id: io.jenkins.plugins
+Artifact-Id: github-checks
+Short-Name: github-checks
+Long-Name: GitHub Checks plugin
+Url: https://github.com/jenkinsci/github-checks-plugin
+Plugin-Version: 602.v264a_83610da_6
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: checks-api:2.2.1,workflow-cps:4014.vcd7dc51d8b_30,w
+ orkflow-job:1498.v33a_0c6f3a_4b_4,github-api:1.321-478.vc9ce627ce001,gi
+ thub-branch-source:1810.v913311241fa_9
+Plugin-Developers: Kezhi Xiong:xiongkezhi:august.xkz@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/github-checks
+ -plugin.git
+Plugin-ScmTag: 264a83610da699de047fd3ca7246b5e981984fea
+Plugin-ScmUrl: https://github.com/jenkinsci/github-checks-plugin
+Implementation-Build: 264a83610da699de047fd3ca7246b5e981984fea
+

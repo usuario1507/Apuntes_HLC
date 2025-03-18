@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: GitLab Credentials - Kubernetes Integration
+Specification-Version: 0.0
+Implementation-Title: GitLab Credentials - Kubernetes Integration
+Implementation-Version: 424.vd4c848a_61813
+Group-Id: io.jenkins.plugins
+Artifact-Id: gitlab-kubernetes-credentials
+Short-Name: gitlab-kubernetes-credentials
+Long-Name: GitLab Credentials - Kubernetes Integration
+Plugin-Version: 424.vd4c848a_61813
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: kubernetes-credentials-provider:1.273.v15e69b_55ea_
+ 8e,gitlab-branch-source:718.v40b_5f0e67cd3
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/gitlab-kubern
+ etes-credentials-plugin.git
+Plugin-ScmTag: d4c848a618136b8578eaac6cb9a17f049efcd0c2
+Plugin-ScmUrl: https://github.com/jenkinsci/gitlab-kubernetes-credential
+ s-plugin
+Implementation-Build: d4c848a618136b8578eaac6cb9a17f049efcd0c2
+

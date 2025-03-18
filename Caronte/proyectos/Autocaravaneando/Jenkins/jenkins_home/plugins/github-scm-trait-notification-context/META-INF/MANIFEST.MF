@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: GitHub Custom Notification Context SCM Behaviour
+Specification-Version: 0.0
+Implementation-Title: GitHub Custom Notification Context SCM Behaviour
+Implementation-Version: 45.v8ef831829589
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: github-scm-trait-notification-context
+Short-Name: github-scm-trait-notification-context
+Long-Name: GitHub Custom Notification Context SCM Behaviour
+Url: https://github.com/jenkinsci/github-scm-trait-notification-context-
+ plugin
+Plugin-Version: 45.v8ef831829589
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: github-branch-source:1809.v088b_5f22c768
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/github-scm-tr
+ ait-notification-context-plugin.git
+Plugin-ScmTag: 8ef831829589aebb4605b8d346a2d1d635a2894a
+Plugin-ScmUrl: https://github.com/jenkinsci/github-scm-trait-notificatio
+ n-context-plugin
+Implementation-Build: 8ef831829589aebb4605b8d346a2d1d635a2894a
+

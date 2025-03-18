@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: runner
+Build-Jdk: 1.8.0_322
+Extension-Name: pipeline-githubnotify-step
+Specification-Title: Plugin that provides a GitHub status notification
+  step
+Implementation-Title: pipeline-githubnotify-step
+Implementation-Version: 49.vf37bf92d2bc8
+Group-Id: org.jenkins-ci.plugins
+Short-Name: pipeline-githubnotify-step
+Long-Name: Pipeline GitHub Notify Step Plugin
+Url: https://github.com/jenkinsci/pipeline-githubnotify-step-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 49.vf37bf92d2bc8
+Hudson-Version: 2.222.4
+Jenkins-Version: 2.222.4
+Plugin-Dependencies: credentials:2.4.1,display-url-api:2.3.4,github-ap
+ i:1.123,github-branch-source:2.0.8
+Plugin-Developers: Raul Arabaolaza:raul-arabaolaza:rarabaolaza@cloudbe
+ es.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-githubnotify-step
+ -plugin
+

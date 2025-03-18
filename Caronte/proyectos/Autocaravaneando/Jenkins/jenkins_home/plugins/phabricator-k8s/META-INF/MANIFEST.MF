@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: andresrc
+Build-Jdk: 1.8.0_192
+Extension-Name: phabricator-k8s
+Specification-Title: Integrates conduit credentials with the k8s crede
+ ntial provider
+Implementation-Title: phabricator-k8s
+Implementation-Version: 1.0.0
+Group-Id: io.jenkins.plugins
+Short-Name: phabricator-k8s
+Long-Name: Phabricator - Kubernetes Intergration
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.0.0
+Hudson-Version: 2.89.1
+Jenkins-Version: 2.89.1
+Plugin-Dependencies: kubernetes-credentials-provider:0.10,phabricator-
+ plugin:2.1.1
+Plugin-Developers: 
+

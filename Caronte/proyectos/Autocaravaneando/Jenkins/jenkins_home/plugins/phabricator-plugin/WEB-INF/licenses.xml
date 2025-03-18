@@ -1,0 +1,18 @@
+<l:dependencies xmlns:l='licenses' version='2.1.3' artifactId='phabricator-plugin' groupId='org.jenkins-ci.plugins'>
+  <l:dependency version='2.1.3' artifactId='phabricator-plugin' groupId='org.jenkins-ci.plugins' name='Phabricator Differential Plugin' url='https://wiki.jenkins-ci.org/display/JENKINS/Phabricator+Differential+Plugin'>
+    <l:description>Integrate Jenkins with Phabricator Differentials and Uberalls</l:description>
+    <l:license url='http://opensource.org/licenses/MIT' name='MIT License' />
+  </l:dependency>
+  <l:dependency version='4.5.3' artifactId='httpclient' groupId='org.apache.httpcomponents' name='' url=''>
+    <l:description></l:description>
+  </l:dependency>
+  <l:dependency version='4.4.6' artifactId='httpcore' groupId='org.apache.httpcomponents' name='' url=''>
+    <l:description></l:description>
+  </l:dependency>
+  <l:dependency version='1.2' artifactId='commons-logging' groupId='commons-logging' name='' url=''>
+    <l:description></l:description>
+  </l:dependency>
+  <l:dependency version='1.9' artifactId='commons-codec' groupId='commons-codec' name='' url=''>
+    <l:description></l:description>
+  </l:dependency>
+</l:dependencies>

@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: Gitea PAT Kubernetes Credentials
+Specification-Version: 0.0
+Implementation-Title: Gitea PAT Kubernetes Credentials
+Implementation-Version: 17.vfe3747cad95a
+Group-Id: io.jenkins.plugins
+Short-Name: gitea-pat-kubernetes-credentials
+Long-Name: Gitea PAT Kubernetes Credentials
+Url: https://github.com/jenkinsci/gitea-pat-kubernetes-credentials-plugi
+ n
+Plugin-Version: 17.vfe3747cad95a
+Hudson-Version: 2.346.3
+Jenkins-Version: 2.346.3
+Plugin-Dependencies: kubernetes-credentials-provider:1.206.v7ce2cf7b_0c8
+ b;resolution:=optional,gitea:1.4.4;resolution:=optional
+Plugin-Developers: Gong Yi:topikachu:topikachu@163.com
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/gitea-pat-kubernetes-credent
+ ials-plugin
+

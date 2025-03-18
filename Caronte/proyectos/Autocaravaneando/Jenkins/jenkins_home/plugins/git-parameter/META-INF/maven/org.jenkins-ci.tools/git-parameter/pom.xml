@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jenkins-ci.tools</groupId>
+  <artifactId>git-parameter</artifactId>
+  <version>0.11.0</version>
+  <packaging>hpi</packaging>
+  <name>Git Parameter Plug-In</name>
+  <description>The Jenkins Plugins Parent POM Project</description>
+  <url>https://github.com/jenkinsci/git-parameter-plugin</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>markewaite</id>
+      <name>Mark Waite</name>
+      <email>mark.earl.waite@gmail.com</email>
+    </developer>
+    <developer>
+      <id>klimas7</id>
+      <name>Boguslaw Klimas</name>
+      <email>klimas7@gmail.com</email>
+    </developer>
+    <developer>
+      <id>lukanus</id>
+      <name>Lukasz Milkowski</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/jenkinsci/git-parameter-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/git-parameter-plugin.git</developerConnection>
+    <tag>git-parameter-0.11.0</tag>
+    <url>https://github.com/jenkinsci/git-parameter-plugin</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>com.sonyericsson.hudson.plugins.rebuild</groupId>
+      <artifactId>rebuild</artifactId>
+      <version>332.va_1ee476d8f6d</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.jenkins.plugins</groupId>
+      <artifactId>jquery3-api</artifactId>
+      <version>3.7.1-2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>git</artifactId>
+      <version>5.7.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins.workflow</groupId>
+      <artifactId>workflow-support</artifactId>
+      <version>943.v8b_0d01a_7b_a_08</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <version>3.60</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

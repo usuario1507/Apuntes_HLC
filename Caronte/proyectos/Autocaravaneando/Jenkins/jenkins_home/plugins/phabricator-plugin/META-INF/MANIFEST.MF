@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Plugin-Dependencies: credentials:1.22,junit:1.6;resolution:=optional,c
+ obertura:1.11;resolution:=optional,jacoco:2.2.1;resolution:=optional
+Long-Name: Phabricator Differential Plugin
+Plugin-Developers: Aiden Scandella:ai:sc@ndella.com
+Group-Id: org.jenkins-ci.plugins
+Plugin-Version: 2.1.5
+Jenkins-Version: 2.6
+Extension-Name: phabricator-plugin
+Plugin-Class: com.uber.jenkins.phabricator.PhabricatorPlugin
+Mask-Classes: org.apache.http.
+Url: https://wiki.jenkins-ci.org/display/JENKINS/Phabricator+Different
+ ial+Plugin
+Short-Name: phabricator-plugin
+

@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Git Changelog
+Specification-Version: 3.43
+Implementation-Title: Git Changelog
+Implementation-Version: 3.43
+Group-Id: de.wellnerbou.jenkins
+Artifact-Id: git-changelog
+Short-Name: git-changelog
+Long-Name: Git Changelog
+Url: https://github.com/jenkinsci/git-changelog-plugin
+Plugin-Version: 3.43
+Hudson-Version: 2.462.1
+Jenkins-Version: 2.462.1
+Plugin-Dependencies: okhttp-api:4.11.0-172.vda_da_1feeb_c6e,workflow-ste
+ p-api:678.v3ee58b_469476,credentials:1371.vfee6b_095f0a_3,git-client:5.
+ 0.0,git:5.4.1,jackson2-api:2.17.0-379.v02de8ec9f64c,plain-credentials:1
+ 83.va_de8f1dd5a_2b_,script-security:1361.v913100720139,token-macro:400.
+ v35420b_922dcb_
+Plugin-Developers: Tomas Bjerre:tomasbjerre:tomas.bjerre85@gmail.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/git-changelog
+ -plugin.git
+Plugin-ScmTag: git-changelog-3.43
+Plugin-ScmUrl: git@github.com:jenkinsci/git-changelog-plugin
+Plugin-GitHash: 5cea3866e6f60fadf29d8b8d6ae1e04c38b76f77
+Implementation-Build: 5cea3866e6f60fadf29d8b8d6ae1e04c38b76f77
+

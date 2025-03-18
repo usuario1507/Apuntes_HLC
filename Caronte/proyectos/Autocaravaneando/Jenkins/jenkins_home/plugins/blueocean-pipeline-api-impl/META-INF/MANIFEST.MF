@@ -1,0 +1,43 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 21
+Specification-Title: Pipeline implementation for Blue Ocean
+Specification-Version: 1.27
+Implementation-Title: Pipeline implementation for Blue Ocean
+Implementation-Version: 1.27.17
+Group-Id: io.jenkins.blueocean
+Artifact-Id: blueocean-pipeline-api-impl
+Short-Name: blueocean-pipeline-api-impl
+Long-Name: Pipeline implementation for Blue Ocean
+Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean
+ /doc/BlueOcean.adoc
+Plugin-Version: 1.27.17
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: blueocean-commons:1.27.17,blueocean-pipeline-scm-ap
+ i:1.27.17,blueocean-rest-impl:1.27.17,caffeine-api:3.1.8-133.v17b_1ff2e
+ 0599,workflow-api:1336.vee415d95c521,workflow-cps:4007.vd705fc76a_34e,w
+ orkflow-job:1476.v90f02a_225559,workflow-multibranch:795.ve0cb_1f45ca_9
+ a_,workflow-step-api:678.v3ee58b_469476,workflow-support:936.v9fa_77211
+ ca_e1,branch-api:2.1206.vd9f35001c95c,credentials:1405.vb_cda_74a_f8974
+ ,git:5.7.0,github-branch-source:1807.v50351eb_7dd13,htmlpublisher:1.36,
+ matrix-project:840.v812f627cb_578,pipeline-build-step:540.vb_e8849e1a_b
+ _d8,pipeline-graph-analysis:216.vfd8b_ece330ca_,pipeline-input-step:495
+ .ve9c153f6067b_,pipeline-stage-step:312.v8cd10304c27a_,plain-credential
+ s:183.va_de8f1dd5a_2b_,scm-api:698.v8e3b_c788f0a_6,pipeline-model-defin
+ ition:2.2218.v56d0cda_37c72,pipeline-stage-tags-metadata:2.2218.v56d0cd
+ a_37c72
+Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cliff
+ meyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke:,Jo
+ sh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:michae
+ lneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:,Paul Dr
+ agoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hello:PeterDav
+ eHello:,Alexandru Somai:alexsomai:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/blueocean-plu
+ gin.git
+Plugin-ScmTag: blueocean-parent-1.27.17
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin
+Implementation-Build: 1458e12ec7e0842acb29d20850f7525adfa46e6e
+

@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 21
+Specification-Title: REST Implementation for Blue Ocean
+Specification-Version: 1.27
+Implementation-Title: REST Implementation for Blue Ocean
+Implementation-Version: 1.27.17
+Group-Id: io.jenkins.blueocean
+Artifact-Id: blueocean-rest-impl
+Short-Name: blueocean-rest-impl
+Long-Name: REST Implementation for Blue Ocean
+Url: https://github.com/jenkinsci/blueocean-plugin/blob/master/blueocean
+ /doc/BlueOcean.adoc
+Plugin-Version: 1.27.17
+Hudson-Version: 2.479.3
+Jenkins-Version: 2.479.3
+Plugin-Dependencies: blueocean-jwt:1.27.17,blueocean-rest:1.27.17,blueoc
+ ean-web:1.27.17,caffeine-api:3.1.8-133.v17b_1ff2e0599,workflow-cps:4007
+ .vd705fc76a_34e,cloudbees-folder:6.976.v4dc79fb_c458d,credentials:1405.
+ vb_cda_74a_f8974,display-url-api:2.209.v582ed814ff2f,junit:1312.v1a_235
+ a_b_94a_31,mailer:489.vd4b_25144138f,favorite:2.221.v19ca_666b_62f5
+Plugin-Developers: Thorsten Iberian Sumurai:scherler:,Cliff Meyers:cliff
+ meyers:,Tom Fennelly:tfennelly:,Vivek Pandey:vivek:,Kohsuke:kohsuke:,Jo
+ sh McDonald:sophistifunk:,Ivan Meredith:imeredith:,Michael Neale:michae
+ lneale:,Keith Zantow:kzantow:,James Dumay:i386:,Marc:marcesher:,Paul Dr
+ agoonis:dragoonis:,Ivan Santos:pragmaticivan:,Peter Dave Hello:PeterDav
+ eHello:,Alexandru Somai:alexsomai:
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/blueocean-plu
+ gin.git
+Plugin-ScmTag: blueocean-parent-1.27.17
+Plugin-ScmUrl: https://github.com/jenkinsci/blueocean-plugin
+Implementation-Build: 1458e12ec7e0842acb29d20850f7525adfa46e6e
+

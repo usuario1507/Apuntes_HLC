@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: GitLab Branch Source Plugin
+Specification-Version: 0.0
+Implementation-Title: GitLab Branch Source Plugin
+Implementation-Version: 718.v40b_5f0e67cd3
+Group-Id: io.jenkins.plugins
+Artifact-Id: gitlab-branch-source
+Short-Name: gitlab-branch-source
+Long-Name: GitLab Branch Source Plugin
+Url: https://github.com/jenkinsci/gitlab-branch-source-plugin
+Compatible-Since-Version: 685
+Plugin-Version: 718.v40b_5f0e67cd3
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: gitlab-api:5.6.0-97.v6603a_83f8690,workflow-job:147
+ 2.ve4d5eca_143c4,apache-httpcomponents-client-4-api:4.5.14-208.v4383519
+ 42757,branch-api:2.1202.vc51412f3ed84,credentials:1405.vb_cda_74a_f8974
+ ,git:5.6.0,handy-uri-templates-2-api:2.1.8-30.v7e777411b_148,plain-cred
+ entials:183.va_de8f1dd5a_2b_,scm-api:698.v8e3b_c788f0a_6
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/gitlab-branch
+ -source-plugin.git
+Plugin-ScmTag: 40b5f0e67cd36c3e8b925baf41b17f907ef32314
+Plugin-ScmUrl: https://github.com/jenkinsci/gitlab-branch-source-plugin
+Implementation-Build: 40b5f0e67cd36c3e8b925baf41b17f907ef32314
+

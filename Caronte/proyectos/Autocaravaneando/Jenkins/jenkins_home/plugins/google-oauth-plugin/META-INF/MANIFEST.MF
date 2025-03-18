@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Google OAuth Credentials plugin
+Specification-Version: 0.0
+Implementation-Title: Google OAuth Credentials plugin
+Implementation-Version: 1.335.ve6de40e2db_18
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: google-oauth-plugin
+Short-Name: google-oauth-plugin
+Long-Name: Google OAuth Credentials plugin
+Url: https://github.com/jenkinsci/google-oauth-plugin/blob/develop/docs/
+ home.md
+Compatible-Since-Version: 1.0.0
+Plugin-Version: 1.335.ve6de40e2db_18
+Hudson-Version: 2.479.1
+Jenkins-Version: 2.479.1
+Plugin-Dependencies: apache-httpcomponents-client-4-api:4.5.14-208.v4383
+ 51942757,credentials:1405.vb_cda_74a_f8974,jackson2-api:2.17.0-379.v02d
+ e8ec9f64c,oauth-credentials:0.653.v14cf2088e950
+Plugin-Developers: Andrey Stroilov:astroilov:,Craig Barber:craigdbarber:
+ craigbarber@google.com,Stephen Shank:stephenashank:stephenshank@google.
+ com
+Plugin-License-Name: The Apache V2 License
+Plugin-License-Url: https://www.apache.org/licenses/LICENSE-2.0
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/google-oauth-
+ plugin.git
+Plugin-ScmTag: e6de40e2db188e75a6a2777a9df0e0015dcd2041
+Plugin-ScmUrl: https://github.com/jenkinsci/google-oauth-plugin
+Implementation-Build: e6de40e2db188e75a6a2777a9df0e0015dcd2041
+

@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: gongy
+Build-Jdk: 11.0.9.1
+Extension-Name: github-app-kubernetes-credentials
+Specification-Title: Github App Kubernetes Credentials
+Implementation-Title: github-app-kubernetes-credentials
+Implementation-Version: 0.0.1
+Group-Id: io.jenkins.plugins
+Short-Name: github-app-kubernetes-credentials
+Long-Name: Github App Kubernetes Credentials
+Url: https://github.com/jenkinsci/github-app-kubernetes-credentials-pl
+ ugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 0.0.1
+Hudson-Version: 2.176.1
+Jenkins-Version: 2.176.1
+Plugin-Dependencies: kubernetes-credentials-provider:0.13;resolution:=
+ optional,workflow-multibranch:1.14.2,github-branch-source:2.7.1;resol
+ ution:=optional
+Plugin-Developers: Gong Yi:topikachu:topikachu@163.com
+Support-Dynamic-Loading: true
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/github-app-kubernetes-cred
+ entials-plugin
+

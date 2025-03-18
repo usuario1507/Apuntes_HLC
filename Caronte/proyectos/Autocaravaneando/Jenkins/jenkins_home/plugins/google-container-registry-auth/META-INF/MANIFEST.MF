@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: weizheng
+Build-Jdk: 1.8.0-google-v7
+Extension-Name: google-container-registry-auth
+Specification-Title: This plugin exposes a credential for use with the
+  Docker Build Step plugin for authenticating with Google Container Re
+ gistry as a service account.
+Implementation-Title: google-container-registry-auth
+Implementation-Version: 0.3
+Group-Id: org.jenkins-ci.plugins
+Short-Name: google-container-registry-auth
+Long-Name: Google Container Registry Auth Plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Google+Container+Regis
+ try+Auth+Plugin
+Plugin-Version: 0.3
+Hudson-Version: 1.596.2
+Jenkins-Version: 1.596.2
+Plugin-Dependencies: google-oauth-plugin:0.3,docker-commons:1.0
+Plugin-Developers: Wei Zheng:wzheng2310:
+
