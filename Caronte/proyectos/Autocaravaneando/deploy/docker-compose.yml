@@ -1,14 +1,9 @@
-version: "3.8"
+version: '3.8'
 services:
   servidor:
     build:
-      context: ${CONTEXTO}
-      dockerfile: ./dockerfiles/js/react/Dockerfile
-      args: 
-        - CONTEXT=${CONTEXTO}
-        - TZ=${TZ}
-        - PROYECTO=${PROYECTO}
-        - AUTOR=${AUTOR}
+      context: /home/usuario/HLC-24-25/Caronte/proyectos/Autocaravaneando/deploy
+      dockerfile: Dockerfile
     image: ${AUTOR}/react
     container_name: ${PROYECTO}
     hostname: ${HOSTNAME}
@@ -19,7 +14,7 @@ services:
       - PASSWORD=${PASSWD}
     ports:
       - "${PORT_ORIGEN}:80"
-      - 3000:3000
+      - "3000:3000"
     volumes:
       - ./logs:/root/logs
       - ./html:/var/www/html

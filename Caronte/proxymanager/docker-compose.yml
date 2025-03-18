@@ -9,4 +9,10 @@ services:
      - "80:80"
      - "81:81"
      - "443:443"
-    
+    volumes:
+     - ./data:/data
+     - ./letsencrypt:/etc/letsencrypt
+    environment:
+     - PUID=0
+     - PGID=0
+     - TZ=Europe/Madrid

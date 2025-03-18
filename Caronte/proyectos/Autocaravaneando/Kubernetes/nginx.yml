@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: autocaravaneando
+  labels:
+    name: autocaravaneando
+    namespace: default
+spec:
+  containers:
+  - name: autocaravaneando
+    image: usuario1507/angel-react
+    envFrom:
+    - configMapRef:
+        name: app-env-configmap
+          
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-env-configmap
+data:
+  USUARIO: "angel"
+  PASSWORD: "contraseña_segura"
+  GITHUB: "https://github.com/usuario1507/autocaravaneando.git"

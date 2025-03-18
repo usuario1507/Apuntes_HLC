@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+ jenkins:
+   image: jenkins-kubectl
+   container_name: ctjenkinskub
+   network_mode: "host"  
+   privileged: true
+   user: root
+   ports:
+     - 8080:8080
+     - 50000:50000
+   volumes:
+     - ./jenkins_home:/var/jenkins_home
+     - /home/morgado/.kube:/var/jenkins_home/.kube
+     - /home/morgado/.minikube:/var/jenkins_home/.minikube
+     - /var/run/docker.sock:/var/run/docker.sock
