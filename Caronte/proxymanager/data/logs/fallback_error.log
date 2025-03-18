@@ -1,0 +1,2 @@
+2025/03/18 11:11:36 [alert] 203#203: 512 worker_connections are not enough
+2025/03/18 11:11:36 [error] 203#203: *960 recv() failed (104: Connection reset by peer) while reading response header from upstream, client: 127.0.0.1, server: localhost-nginx-proxy-manager, request: "GET /favicon.ico HTTP/1.1", upstream: "http://127.0.0.1:80/favicon.ico", host: "192.168.8.94", referrer: "http://192.168.8.94/"
